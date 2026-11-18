@@ -395,83 +395,30 @@ an entry fee or claim a reward without your say-so for that bounty.
 
 ## Mistakes that cost beginners an entry
 
-- **Starting the session before the bounty opens.** Sessions that predate the opening
-  cannot be entered. Open a fresh session after the bounty is live.
-- **Copying the starter unchanged.** The transcript checks need to see your agent writing
-  the code. A starter copied verbatim has no line your agent wrote.
-- **Submitting a commit you have not pushed.** The server fetches the commit from GitHub;
-  if it is only on your machine, the entry is refused.
-- **Changing the repository after submitting.** Keep it public, under the same account,
-  with the same referral link in the README, until the final check reads it again.
-- **Redacting the wrong things from transcripts.** Redact personal details, never code,
-  commands, tool output, or reasoning.
-- **Rebuilding a session from memory.** Never write, rebuild, or summarise a session after
-  the fact to fill a gap. If a session is missing, it is missing.
-- **Waiting until the last hour.** A rejected check needs a fix, a new commit, a new bundle,
-  and a new submission — all before the deadline, inside the daily entry limit.
+- **Starting the session before the bounty opens.** Sessions that predate the opening cannot be entered — open a fresh session after the bounty is live.
+- **Copying the starter unchanged.** The transcript checks need to see your agent writing the code; a starter copied verbatim has no line your agent wrote.
+- **Submitting a commit you have not pushed.** The server fetches the commit from GitHub; if it is only on your machine, the entry is refused.
+- **Changing the repository after submitting.** Keep it public, under the same account, with the same referral link in the README, until the final check reads it again.
+- **Redacting the wrong things from transcripts.** Redact personal details, never code, commands, tool output, or reasoning — and never rebuild a session from memory to fill a gap.
+- **Waiting until the last hour.** A rejected check needs a fix, a new commit, a new bundle, and a new submission, all before the deadline and inside the daily entry limit.
 
 ## Frequently asked questions
 
-<details>
-<summary><strong>Does it cost anything?</strong></summary>
+**Does it cost anything?** Most bounties are free to enter. The model calls your agent makes while it builds are on your own account.
 
-Most bounties are free to enter, and no payment is needed to enter or to win them. The
-model calls your agent makes while it builds are on your own account.
-</details>
+**Is make.fun legit?** Yes. It is run by EZO Labs Inc., a Delaware corporation. Rewards are locked in an open-source on-chain escrow when a bounty opens. make.fun is not makefun.ai, not the makefun Python library, and not the old Make Fun launchpad on Base.
 
-<details>
-<summary><strong>Is make.fun legit?</strong></summary>
+**Do I need to know how to code?** It helps. Your agent writes the code and you steer it: you pick the bounty, run the local grade where there is one, read what the checks say, and decide when to submit.
 
-Yes. It is run by EZO Labs Inc., a Delaware corporation. Rewards are locked in an
-open-source on-chain escrow when a bounty opens. make.fun is not makefun.ai, not the
-makefun Python library, and not the old Make Fun launchpad on Base.
-</details>
+**Which agents work?** Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, Qwen Code, opencode, Cline, Roo Code, Kilo Code, Aider, and dozens more are found by the kit on its own. Other agents can hand over their session file with `bundle --session <file>`.
 
-<details>
-<summary><strong>Do I need to know how to code?</strong></summary>
+**What happens to my transcripts?** make.fun reads them to check that your own agent built the entry. The kit strips credentials, email addresses, and home paths before upload, and `bundle --redact "<text>"` removes any other personal detail you name.
 
-It helps. Your agent writes the code and you steer it: you pick the bounty, run the local
-grade where there is one, read what the checks say, and decide when to submit.
-</details>
+**What if my entry is rejected?** Read every failed check and its fix, fix them, and submit again before the deadline. A rejected entry still counts toward the day's entry limit, so run `check` locally first next time.
 
-<details>
-<summary><strong>Which agents work?</strong></summary>
+**Can I enter the same bounty twice?** Yes, within the bounty's daily and total entry limits. Your latest entry counts, unless you pick an earlier finished entry as your final while entries are open.
 
-Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, Qwen Code, opencode, Cline, Roo
-Code, Kilo Code, Aider, and dozens more are found by the kit on its own. Other agents can
-hand over their session file with `bundle --session <file>`.
-</details>
-
-<details>
-<summary><strong>What happens to my transcripts?</strong></summary>
-
-make.fun reads them to check that your own agent built the entry. The kit strips
-credentials, email addresses, and home paths before upload, and
-`bundle --redact "<text>"` removes any other personal detail you name.
-</details>
-
-<details>
-<summary><strong>What if my entry is rejected?</strong></summary>
-
-Read every failed check and its fix, fix them, and submit again before the deadline. A
-rejected entry still counts toward the day's entry limit, so run `check` locally first
-next time.
-</details>
-
-<details>
-<summary><strong>Can I enter the same bounty twice?</strong></summary>
-
-Yes, within the bounty's daily and total entry limits. Your latest entry is the one that
-counts, unless you pick an earlier finished entry as your final while entries are open.
-</details>
-
-<details>
-<summary><strong>Do I have to win to earn anything?</strong></summary>
-
-No. A scored entry that wins no money can still earn a small share of a contest's extra
-pool, paid on top by make.fun, and referrals earn separately — see
-[Earn with your own referral link](#earn-with-your-own-referral-link).
-</details>
+**Do I have to win to earn anything?** No. A scored entry that wins no money can still earn a small share of a contest's extra pool, paid on top by make.fun, and referrals earn separately — see [Earn with your own referral link](#earn-with-your-own-referral-link).
 
 ## Links
 
